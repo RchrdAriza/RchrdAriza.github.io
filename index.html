@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- metadatos -->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Richard Ariza" />
+    <meta name="description" content="Portafolio" />
+    <meta name="keywords" content="HTML, Bootstrap, Python, Desarrollo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- titulo -->
+    <title>Richard Ariza | Portafolio</title>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="imagenes/doughnut-chart-solid-24.png"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- css -->
+    <link href="static/css/style.css" rel="stylesheet" />
+    <style>
+      /* Estilos para el botón */
+      .btn {
+        display: none; /* Ocultar el botón por defecto */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary navbar-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand">
+            <img
+              src="static/imagenes/doughnut-chart-solid-24.png"
+              width="30"
+              alt="Logo de la pagina"
+            />
+          </a>
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi"
+                >Sobre mi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://github.com/RchrdAriza"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#conocimientos">Conocimientos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">contactos</a>
+            </li>
+            <li class="nav-item">
+              <a href="curriculum/HojaDeVida.pdf" class="nav-link"
+                >Descargar CV</a
+              >
+            </li>
+            <li class="nav-item dropdown-center">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-expanded="false"
+              >
+                Idioma
+              </a>
+              <ul class="dropdown-menu dropdown-menu-md-end">
+                <li><a class="dropdown-item" href="indexEn.html">Ingles</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- seccion hero -->
+    <section class="hero align-items-stretch">
+      <div
+        class="hero-principal d-flex flex-column justify-content-center align-items-center p-3"
+      >
+        <img
+          class="hero-img-dev rounded-circle"
+          src="static/imagenes/desarrollador.png"
+          alt="Imagen desarrollador-ejemplo"
+        />
+        <h1>Hola soy Richard Ariza</h1>
+        <h2>
+          Soy un programador backend con experiencia en Linux y sistemas
+          operativos, especializado en el desarrollo informático. Mi enfoque se
+          centra en crear soluciones sólidas y eficientes para impulsar la
+          innovación. Con habilidades backend, para entregar resultados de
+          calidad en entornos dinámicos
+        </h2>
+      </div>
+      <div class="hero-inferior">
+        <img
+          class="hero-inferior-imagen img-fluid"
+          src="static/imagenes/Portfolio.png"
+          alt="Imagen portafolio lenguajes logos"
+        />
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Conoceme</h2>
+        <p class="seccion-texto">
+          Soy un programador backend con experiencia en Linux y sistemas
+          operativos, especializado en el desarrollo informático. Mi enfoque se
+          centra en crear soluciones sólidas y eficientes para impulsar la
+          innovación. Con habilidades backend, para entregar resultados de
+          calidad en entornos dinámicos
+        </p>
+      </div>
+    </section>
+
+    <section id="conocimientos" class="experiencia seccion-clara">
+      <h2 class="pb-3">Conocimientos</h2>
+      <div class="container text-center">
+        <div class="row gap-1 d-flex flex-md-nowrap rounded">
+          <div class="columna col-12 col-md-4 rounded">
+            <!-- <i class="bi bi-laptop"></i> -->
+            <i class="text-light bi bi-terminal-plus"></i>
+            <p class="experiencia-titulo">Linux</p>
+            <p>
+              Experiencia en administración de sistemas Linux, con habilidades
+              en el uso de comandos de la terminal, scripting en Bash.
+              Familiarizado con distribuciones como Ubuntu y Debian, así como
+              con el lenguaje de programación Lua para tareas específicas.
+            </p>
+            <div class="badges-contenedor">
+              <img
+                src="https://img.shields.io/badge/-Linux-sucess?logo=linux&logoColor=white&labelColor=black&color=white"
+                alt="Linux-logo"
+              />
+              <img
+                src="https://img.shields.io/badge/-Bash-success?logo=gnu-bash&logoColor=white&labelColor=black&color=white"
+                alt="Bash-logo"
+              />
+              <img
+                src="https://img.shields.io/badge/-Ubuntu-success?logo=ubuntu&logoColor=white&labelColor=black&color=white"
+                alt="Ubuntu-logo"
+              />
+              <img
+                src="https://img.shields.io/badge/-Debian-success?logo=debian&logoColor=white&labelColor=black&color=white"
+                alt="Debian-logo"
+              />
+              <img
+                src="https://img.shields.io/badge/-Lua-sucess?logo=lua&logoColor=white&labelColor=black&color=white"
+                alt="Lua-logo"
+              />
+            </div>
+          </div>
+
+          <div class="columna col-12 col-md-4 rounded">
+            <!-- <i class="bi bi-laptop"></i> -->
+            <i class="text-light bi bi-file-earmark-code-fill"></i>
+            <p class="experiencia-titulo">Programacion /Backend</p>
+            <p>
+              Con sólidos conocimientos en backend con Python y Django, estoy
+              familiarizado con FastAPI para la creación de APIs eficientes.
+              Además, utilizo Git y GitHub para colaboración en desarrollo de
+              software.
+            </p>
+            <div class="badges-contenedor">
+              <!-- <span class="badge text-bg-primary">Escribir</span> -->
+              <img
+                src="https://img.shields.io/badge/-Python-success?logo=python&logoColor=white&labelColor=black&color=white"
+                alt="Python-logo"
+              />
+              <!-- <span class="badge text-bg-primary">Editar</span> -->
+              <img
+                src="https://img.shields.io/badge/-Django-success?logo=django&logoColor=white&labelColor=black&color=white"
+                alt="Django-logo"
+              />
+              <!-- <span class="badge text-bg-primary">Blogs</span> -->
+              <img
+                src="https://img.shields.io/badge/-Git-success?logo=git&logoColor=white&labelColor=black&color=white"
+                alt="Git-logo"
+              />
+              <img
+                src="https://img.shields.io/badge/-Github-success?logo=github&logoColor=white&labelColor=black&color=white"
+                alt="GitHub-logo"
+              />
+              <img
+                src="https://img.shields.io/badge/-FastApi-success?logo=fastapi&logoColor=white&labelColor=black&color=white"
+                alt="FastApi-logo"
+              />
+            </div>
+          </div>
+          <div class="columna col-12 col-md-4 rounded">
+            <i class="text-light bi bi-database"></i>
+            <p class="experiencia-titulo">Base de datos</p>
+            <p>
+              Con habilidades en bases de datos, estoy familiarizado con
+              PostgreSQL, SQLite y MySQL. Mi experiencia incluye el diseño y
+              manejo eficiente de sistemas de almacenamiento de datos.
+            </p>
+            <div class="badges-contenedor">
+              <img
+                src="https://img.shields.io/badge/-PostgreSQL-success?logo=postgresql&logoColor=white&labelColor=black&color=white"
+                alt="Postgresql-logo"
+              />
+
+              <img
+                src="https://img.shields.io/badge/-SQLite-success?logo=sqlite&logoColor=white&labelColor=black&color=white"
+                alt="SQLite-logo"
+              />
+              <img
+                src="https://img.shields.io/badge/-MySQL-sucess?logo=mysql&logoColor=white&labelColor=black&color=white"
+                alt="MySQL-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos</h2>
+      <h3 class="seccion-descripcion text-center">
+        Estos son algunos proyectos que he hecho recientemente
+      </h3>
+      <div class="container text-center proyecto-contenedor">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide overflow-hidden d-flex justify-content-center"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner carrusel d-flex align-items-center">
+            <div class="carousel-item active h-75" data-bs-interval="10000">
+              <img
+                src="static/imagenes/nvimonmy_way.jpeg"
+                class="d-block w-100 h-100 rounded-2"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>NvimOnMy_Way</h5>
+                <p>Es una configuracion completa del editor Neovim con todas las caracteristicas necesarias para ser IDE</p>
+              </div>
+            </div>
+            <div class="carousel-item h-75" data-bs-interval="2000">
+              <img
+                src="static/imagenes/temaimg.jpg"
+                class="d-block w-100 h-100 rounded-2 object-fit-cover"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>Pulp fiction theme</h5>
+                <p>Tema para neovim inspirado en la pelicula "pulp Fiction" del director Quentin taratino</p>
+              </div>
+            </div>
+            <div class="carousel-item h-75">
+              <img
+                src="static/imagenes/Snake.jpg"
+                class="d-block w-100 h-100 rounded-2"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>Juego de la serpiente</h5>
+                <p>una version simple del juego clasico de la serpiente y la manzana hecho en python para terminales</p>
+              </div>
+            </div>
+            <div class="carousel-item h-75">
+              <img
+                src="static/imagenes/Md.jpg"
+                class="d-block w-100 h-100 rounded-2"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h5>Markdown live grip</h5>
+                <p>Una configuración sencilla para que neovim muestre archivos markdown en tiempo real</p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon lg-bg"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon lg-bg"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="mb-5">
+          <a
+            href="https://github.com/RchrdAriza?tab=repositories"
+            target="_blank"
+            class="btn btn-primary d-inline-block"
+          >
+            + Proyectos
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div
+          class="container text-center rectangulo d-flex justify-content-evenly"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">¡Hablemos!</div>
+            <div class="col-12 col-md-4 descripcion">
+              <p>
+                Estoy a disposición para entablar conversaciones sobre
+                oportunidades profesionales y colaboraciones en proyectos. Si
+                estás interesado en discutir posibilidades de trabajo conjunto,
+                compartir ideas o explorar cómo puedo contribuir a tus
+                iniciativas, no dudes en ponerte en contacto. Espero con interés
+                la posibilidad de conectar contigo.
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <a
+                href="mailto:richardariza816@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button type="button">
+                  Contacto
+                  <i class="bi bi-envelope-at"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+      class="seccion-oscura d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        class="footer-logo"
+        src="static/imagenes/doughnut-chart-solid-24.png"
+        alt="Logo del portafolio"
+      />
+      <!-- <p class="footer-texto text-center">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.<br>Creemos un proyecto juntos</p> -->
+      <div
+        class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center"
+      >
+        <a
+          href="https://twitter.com/RchrdDev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a
+          href="https://www.github.com/RchrdAriza"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+        <a
+          href="mailto:richardariza816@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-envelope-at"></i>
+        </a>
+      </div>
+      <div class="derechos">creado por Richard Ariza &#169;</div>
+    </footer>
+
+    <div class="position-relative">
+      <button
+        class="btn btn-light border shadow px-3 py-3 position-fixed bottom-0 end-0 mb-3 rounded-start-pill py-md-4 px-md-5"
+        onclick="scrollToTop()"
+        id="scrollTopButton"
+        title="Volver arriba"
+      >
+        ↑
+      </button>
+    </div>
+
+    <script src="static/js/main.js"></script>
+
+    <!-- bootstrap javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
