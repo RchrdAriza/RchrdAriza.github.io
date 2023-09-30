@@ -33,11 +33,6 @@ h1 {
   text-align: center;
 }
 
-.seccion-titulo {
-  font-size: 2rem;
-  padding: 10px 0;
-  font-family: "Lato", sans-serif;
-}
 
 .seccion-texto {
   font-size: 1rem;
@@ -55,14 +50,21 @@ h1 {
 }
 
 .sobre-mi {
-  height: 500px;
-  padding: 100px;
+  height: 600px;
+  padding: 90px;
 }
 
 .sobre-mi .contenedor {
   max-width: 600px;
   text-align: center;
 }
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 10px 0;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
 
 .experiencia {
   padding: 40px 40px 60px 40px;
@@ -318,6 +320,10 @@ h1 {
   }
   .carrusel {
     height: 600px;
+  }
+  .sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: justify;
   }
 }
 
